@@ -1,571 +1,96 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="เว็บไซต์ Portfolio ของนักเรียนชั้นมัธยมศึกษาปีที่ 3">
-  <title>หน้าแรก | My Ocean Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก - Student Tactical Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+    <!-- Background Dynamic Canvas & FX -->
+    <div class="bg-overlay"></div>
+    <div class="warzone-bg" style="background-image: url('bg.jpg');"></div>
+    <canvas id="emberCanvas"></canvas>
 
-  <div class="water-layer"></div>
-  <div class="light-rays"></div>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-shield-halved"></i> PORTFOLIO<span>.M3</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> หน้าแรก</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i> ประวัติส่วนตัว</a></li>
+                <li><a href="education.html"><i class="fa-solid fa-graduation-cap"></i> การศึกษา</a></li>
+                <li><a href="hobby.html"><i class="fa-solid fa-gamepad"></i> งานอดิเรก</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <div class="bubble-field" aria-hidden="true">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    <!-- Hero Section -->
+    <main class="main-container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="badge"><i class="fa-solid fa-crosshair"></i> STUDENT PORTFOLIO - CLASS M.3</span>
+                <h1>ยินดีต้อนรับสู่ <br><span class="highlight-text">แฟ้มสะสมผลงาน</span></h1>
+                <p class="hero-desc">
+                    สวัสดีครับ! ผมเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3 ที่มีความสนใจในเทคโนโลยี การออกแบบเว็บไซต์ และการเรียนรู้สิ่งใหม่ๆ เว็บไซต์นี้จัดทำขึ้นเพื่อนำเสนอประวัติ ผลงาน และทักษะในวิชาคอมพิวเตอร์
+                </p>
+                <div class="hero-buttons">
+                    <a href="profile.html" class="btn btn-primary"><i class="fa-solid fa-user-check"></i> รู้จักฉันมากขึ้น</a>
+                    <a href="hobby.html" class="btn btn-secondary"><i class="fa-solid fa-compass"></i> ดูงานอดิเรกของฉัน</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="profile-frame">
+                    <div class="glow-circle"></div>
+                    <img src="https://placehold.co/400x400/1976D2/FFFFFF?text=PROFILE+IMAGE" alt="รูปโปรไฟล์ของฉัน" class="profile-img">
+                </div>
+            </div>
+        </section>
 
-  <div class="ambient-life" aria-hidden="true">
-    <span class="ambient-fish fish-a">🐠</span>
-    <span class="ambient-fish fish-b">🐟</span>
-    <span class="ambient-fish fish-c">🐡</span>
-    <span class="ambient-fish fish-d">🐟</span>
-    <span class="ambient-fish fish-e">🐠</span>
-    <span class="ambient-fish fish-f">🦈</span>
-  </div>
+        <!-- Highlights / Quick Stats Section -->
+        <section class="quick-stats">
+            <div class="stat-card">
+                <i class="fa-solid fa-school icon"></i>
+                <h3>ระดับชั้น</h3>
+                <p>มัธยมศึกษาปีที่ 3</p>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-laptop-code icon"></i>
+                <h3>วิชาที่เชี่ยวชาญ</h3>
+                <p>คอมพิวเตอร์ & เทคโนโลยี</p>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-fire icon"></i>
+                <h3>เป้าหมาย</h3>
+                <p>พัฒนาตนเองสู่ความเป็นมืออาชีพ</p>
+            </div>
+        </section>
+    </main>
 
-  <!-- Navigation -->
-  <header class="site-header">
-    <nav class="nav-shell" aria-label="เมนูหลัก">
-
-      <a class="brand" href="index.html" aria-label="กลับหน้าแรก">
-        <span class="brand-mark">🐋</span>
-        <span>My Ocean Portfolio</span>
-      </a>
-
-      <div class="nav-links">
-        <a class="active" href="index.html">หน้าแรก</a>
-        <a href="profile.html">ประวัติส่วนตัว</a>
-        <a href="education.html">การศึกษา</a>
-        <a href="hobby.html">งานอดิเรก</a>
-        <a href="contact.html">ติดต่อ</a>
-      </div>
-
-      <span class="nav-pill">
-        M.3 • Student Portfolio
-      </span>
-
-    </nav>
-  </header>
-
-  <main>
-
-    <!-- HERO -->
-    <section class="hero page-section">
-
-      <div class="hero-copy reveal">
-
-        <span class="eyebrow">
-          UNDERWATER • STUDENT PORTFOLIO
-        </span>
-
-        <p class="hello">
-          สวัสดีครับ! ผมชื่อ
-        </p>
-
-        <h1>
-          กฤตเมธ
-          <span>ชาญวิทยา</span>
-        </h1>
-
-        <h2>
-          ชื่อเล่น: เมร
-        </h2>
-
-        <p class="hero-text">
-          นักเรียนชั้นมัธยมศึกษาปีที่ 3
-          ผู้ชอบเรียนรู้สิ่งใหม่ ๆ สนใจเทคโนโลยี กีฬา
-          และการสร้างผลงานสร้างสรรค์บนโลกดิจิทัล
-        </p>
-
-        <div class="hero-actions">
-
-          <a class="btn btn-primary magnetic-btn"
-             href="profile.html">
-            รู้จักฉันมากขึ้น
-            <span>→</span>
-          </a>
-
-          <a class="btn btn-glass magnetic-btn"
-             href="hobby.html">
-            ดูงานอดิเรกของฉัน
-          </a>
-
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3><i class="fa-solid fa-shield-halved"></i> STUDENT PORTFOLIO</h3>
+                <p>โครงงานวิชาคอมพิวเตอร์ ชั้นมัธยมศึกษาปีที่ 3</p>
+            </div>
+            <div class="footer-nav">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
+            </div>
         </div>
-
-        <div class="hero-stats">
-
-          <div>
-            <strong>M.3</strong>
-            <span>ระดับชั้น</span>
-          </div>
-
-          <div>
-            <strong>∞</strong>
-            <span>ไอเดียที่อยากลอง</span>
-          </div>
-
-          <div>
-            <strong>01</strong>
-            <span>Portfolio Project</span>
-          </div>
-
+        <div class="footer-bottom">
+            <p>&copy; 2026 Student Portfolio Project. All Rights Reserved.</p>
         </div>
+    </footer>
 
-      </div>
-
-
-      <!-- PROFILE VISUAL -->
-      <div class="hero-visual reveal delay-1">
-
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-
-        <div class="profile-orb">
-
-          <img
-            src="https://placehold.co/640x640/0D47A1/FFFFFF?text=MY+PHOTO"
-            alt="รูปโปรไฟล์ของฉัน">
-
-        </div>
-
-        <div class="depth-card">
-
-          <span>🌊</span>
-
-          <div>
-            <small>NOW EXPLORING</small>
-            <strong>My Personal Ocean</strong>
-          </div>
-
-        </div>
-
-        <div class="whale-hero" aria-hidden="true">
-          🐋
-        </div>
-
-        <div class="fish-school" aria-hidden="true">
-          🐟 🐠 🐟
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- FEATURE -->
-    <section class="feature-strip page-section">
-
-      <div class="section-heading compact">
-
-        <span class="eyebrow">
-          EXPLORE MY WORLD
-        </span>
-
-        <h2>
-          พื้นที่เล็ก ๆ ที่รวมตัวตนของผมไว้
-        </h2>
-
-        <p>
-          เว็บไซต์นี้ออกแบบให้เหมือนการดำน้ำสำรวจมหาสมุทร
-          แต่ละหน้าคืออีกหนึ่งพื้นที่ที่บอกเล่าเรื่องราวของผม
-        </p>
-
-      </div>
-
-
-      <div class="feature-grid">
-
-        <a class="feature-card" href="profile.html">
-
-          <span class="feature-icon">👤</span>
-          <span class="card-number">01</span>
-
-          <h3>
-            ตัวตนของผม
-          </h3>
-
-          <p>
-            ข้อมูลส่วนตัวและเรื่องราวที่ทำให้ผมเป็นตัวเอง
-          </p>
-
-          <span class="card-arrow">↗</span>
-
-        </a>
-
-
-        <a class="feature-card" href="education.html">
-
-          <span class="feature-icon">🎓</span>
-          <span class="card-number">02</span>
-
-          <h3>
-            เส้นทางการเรียน
-          </h3>
-
-          <p>
-            ไทม์ไลน์การศึกษา พร้อมสิ่งที่ผมกำลังเรียนรู้
-          </p>
-
-          <span class="card-arrow">↗</span>
-
-        </a>
-
-
-        <a class="feature-card" href="hobby.html">
-
-          <span class="feature-icon">⚽</span>
-          <span class="card-number">03</span>
-
-          <h3>
-            สิ่งที่ผมหลงใหล
-          </h3>
-
-          <p>
-            งานอดิเรก กีฬา เพลง เกม และความสนใจต่าง ๆ
-          </p>
-
-          <span class="card-arrow">↗</span>
-
-        </a>
-
-
-        <a class="feature-card" href="contact.html">
-
-          <span class="feature-icon">✉️</span>
-          <span class="card-number">04</span>
-
-          <h3>
-            มาคุยกัน
-          </h3>
-
-          <p>
-            ช่องทางสำหรับติดต่อและแลกเปลี่ยนไอเดีย
-          </p>
-
-          <span class="card-arrow">↗</span>
-
-        </a>
-
-      </div>
-
-    </section>
-
-
-    <!-- INTERACTIVE -->
-    <section class="interaction-note">
-
-      <div>
-
-        <span class="eyebrow">
-          INTERACTIVE OCEAN
-        </span>
-
-        <h2>
-          ลองเล่นกับมหาสมุทรดูสิ
-        </h2>
-
-        <p>
-          คลิกซ้ายบนพื้นที่ว่างเพื่อเรียกปลาออกมาว่าย
-          และคลิกขวาเพื่อเรียกวาฬออกมา
-        </p>
-
-      </div>
-
-      <div class="mouse-hint">
-
-        <span>🖱️</span>
-        <b>CLICK</b>
-        <small>LEFT / RIGHT</small>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-
-    <div class="footer-inner">
-
-      <div>
-
-        <div class="brand footer-brand">
-          <span class="brand-mark">🐋</span>
-          <span>My Ocean Portfolio</span>
-        </div>
-
-        <p>
-          ผลงานเว็บไซต์แนะนำตัว
-          ของนักเรียนระดับมัธยมศึกษาปีที่ 3
-        </p>
-
-      </div>
-
-
-      <div class="footer-links">
-
-        <a href="index.html">หน้าแรก</a>
-        <a href="profile.html">ประวัติส่วนตัว</a>
-        <a href="education.html">การศึกษา</a>
-        <a href="hobby.html">งานอดิเรก</a>
-        <a href="contact.html">ติดต่อ</a>
-
-      </div>
-
-    </div>
-
-    <div class="copyright">
-      © 2026 My Ocean Portfolio • Designed with HTML5 + CSS3
-    </div>
-
-  </footer>
-
-
-  <!-- Interactive Mouse -->
-  <script>
-
-    (function () {
-
-      const fishTypes = [
-
-        {
-          emoji: "🐠",
-          name: "ปลาการ์ตูน"
-        },
-
-        {
-          emoji: "🐟",
-          name: "ปลาทะเล"
-        },
-
-        {
-          emoji: "🐡",
-          name: "ปลาปักเป้า"
-        },
-
-        {
-          emoji: "🦈",
-          name: "ฉลาม"
-        },
-
-        {
-          emoji: "🐬",
-          name: "โลมา"
-        },
-
-        {
-          emoji: "🐳",
-          name: "วาฬตัวเล็ก"
-        }
-
-      ];
-
-
-      const stateKey =
-        "oceanPortfolioFishIndex";
-
-      let fishIndex =
-        Number(
-          localStorage.getItem(stateKey) || 0
-        );
-
-
-      function spawnFish(x, y) {
-
-        const item =
-          fishTypes[
-            fishIndex %
-            fishTypes.length
-          ];
-
-        fishIndex++;
-
-        localStorage.setItem(
-          stateKey,
-          fishIndex
-        );
-
-
-        const fish =
-          document.createElement("div");
-
-        fish.className =
-          "click-fish";
-
-        fish.textContent =
-          item.emoji;
-
-        fish.title =
-          item.name;
-
-
-        fish.style.left =
-          Math.max(
-            20,
-            x - 25
-          ) + "px";
-
-
-        fish.style.top =
-          Math.max(
-            70,
-            y - 25
-          ) + "px";
-
-
-        fish.style.setProperty(
-          "--drift",
-          (Math.random() * 160 - 80) + "px"
-        );
-
-
-        fish.style.setProperty(
-          "--rise",
-          (-180 - Math.random() * 180) + "px"
-        );
-
-
-        fish.style.setProperty(
-          "--scale",
-          (0.8 + Math.random() * 0.7).toFixed(2)
-        );
-
-
-        document.body.appendChild(fish);
-
-
-        setTimeout(
-          () => fish.remove(),
-          4200
-        );
-
-      }
-
-
-      document.addEventListener(
-        "click",
-        function (e) {
-
-          if (
-            e.target.closest(
-              "a, button, input, textarea, select, label"
-            )
-          ) {
-            return;
-          }
-
-          spawnFish(
-            e.clientX,
-            e.clientY
-          );
-
-        }
-      );
-
-
-      document.addEventListener(
-        "contextmenu",
-        function (e) {
-
-          e.preventDefault();
-
-
-          const whale =
-            document.createElement("div");
-
-          whale.className =
-            "click-whale";
-
-          whale.textContent =
-            "🐋";
-
-
-          whale.style.left =
-            Math.max(
-              20,
-              e.clientX - 45
-            ) + "px";
-
-
-          whale.style.top =
-            Math.max(
-              70,
-              e.clientY - 35
-            ) + "px";
-
-
-          document.body.appendChild(
-            whale
-          );
-
-
-          setTimeout(
-            () => whale.remove(),
-            5200
-          );
-
-        }
-      );
-
-
-      document
-        .querySelectorAll(".magnetic-btn")
-        .forEach(btn => {
-
-          btn.addEventListener(
-            "pointermove",
-            e => {
-
-              const r =
-                btn.getBoundingClientRect();
-
-              const x =
-                (
-                  e.clientX -
-                  r.left -
-                  r.width / 2
-                ) * 0.12;
-
-              const y =
-                (
-                  e.clientY -
-                  r.top -
-                  r.height / 2
-                ) * 0.12;
-
-
-              btn.style.transform =
-                `translate(${x}px, ${y}px)`;
-
-            }
-          );
-
-
-          btn.addEventListener(
-            "pointerleave",
-            () => {
-
-              btn.style.transform = "";
-
-            }
-          );
-
-        });
-
-    })();
-
-  </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
