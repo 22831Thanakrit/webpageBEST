@@ -1,374 +1,89 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="ข้อมูลสำหรับติดต่อเจ้าของเว็บไซต์ Portfolio">
-
-    <title>Ocean Portfolio | ติดต่อ</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อ - Student Tactical Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+    <div class="bg-overlay"></div>
+    <div class="warzone-bg" style="background-image: url('bg.jpg');"></div>
+    <canvas id="emberCanvas"></canvas>
 
-<header class="site-header">
-
-    <nav class="navbar">
-
-        <a href="index.html" class="logo">
-
-            <span class="logo-mark">🌊</span>
-
-            <span>
-                Ocean<span class="logo-accent">Portfolio</span>
-            </span>
-
-        </a>
-
-
-        <div class="nav-links">
-
-            <a href="index.html">
-                หน้าแรก
-            </a>
-
-            <a href="profile.html">
-                ประวัติส่วนตัว
-            </a>
-
-            <a href="education.html">
-                การศึกษา
-            </a>
-
-            <a href="hobby.html">
-                งานอดิเรก
-            </a>
-
-            <a href="contact.html" class="active">
-                ติดต่อ
-            </a>
-
-        </div>
-
-    </nav>
-
-</header>
-
-
-<main>
-
-    <section class="contact-hero">
-
-        <div class="contact-hero-inner">
-
-            <div>
-
-                <span class="section-label">
-                    CONTACT
-                </span>
-
-                <h1>
-                    Let's Stay
-                    <span class="gradient-text">
-                        Connected
-                    </span>
-                </h1>
-
-                <p>
-                    หากต้องการพูดคุย
-                    แลกเปลี่ยนความคิดเห็น
-                    หรือรู้จักฉันมากขึ้น
-                    สามารถติดต่อได้ตามช่องทางด้านล่าง
-                </p>
-
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-shield-halved"></i> PORTFOLIO<span>.M3</span>
             </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> หน้าแรก</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i> ประวัติส่วนตัว</a></li>
+                <li><a href="education.html"><i class="fa-solid fa-graduation-cap"></i> การศึกษา</a></li>
+                <li><a href="hobby.html"><i class="fa-solid fa-gamepad"></i> งานอดิเรก</a></li>
+                <li><a href="contact.html" class="active"><i class="fa-solid fa-paper-plane"></i> ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-
-            <div class="contact-hero-icon">
-                📡
-            </div>
-
+    <main class="main-container">
+        <div class="section-header">
+            <h2><i class="fa-solid fa-envelope-open-text"></i> ช่องทางการติดต่อ (Contact Me)</h2>
+            <p>หากมีข้อสงสัยหรือต้องการพูดคุย สามารถติดต่อผมได้ตามช่องทางด้านล่างนี้</p>
         </div>
 
-    </section>
-
-
-    <section class="contact-section section-light">
-
-        <div class="section-heading">
-
-            <span class="section-label">
-                GET IN TOUCH
-            </span>
-
-            <h2>
-                สามารถติดต่อฉันได้ที่
-            </h2>
-
-        </div>
-
-
-        <div class="contact-grid">
-
-
-            <article class="contact-card">
-
-                <div class="contact-icon">
-                    ✉️
+        <section class="contact-wrapper">
+            <div class="contact-cards-grid">
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>อีเมล (Email)</h3>
+                    <p>student@example.com</p>
+                    <a href="mailto:student@example.com" class="contact-btn">ส่งอีเมลหาฉัน</a>
                 </div>
 
-                <span>
-                    EMAIL
-                </span>
-
-                <h3>
-                    [กรอกอีเมล]
-                </h3>
-
-                <p>
-                    ช่องทางสำหรับติดต่อเกี่ยวกับ
-                    โครงงานหรือการเรียน
-                </p>
-
-                <a
-                    href="mailto:[กรอกอีเมล]"
-                    class="contact-link"
-                >
-                    ส่งอีเมล →
-                </a>
-
-            </article>
-
-
-            <article class="contact-card">
-
-                <div class="contact-icon">
-                    🌐
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3>เว็บไซต์ (Website)</h3>
+                    <p>myportfolio.github.io</p>
+                    <a href="index.html" class="contact-btn">เยี่ยมชมเว็บไซต์</a>
                 </div>
 
-                <span>
-                    WEBSITE
-                </span>
-
-                <h3>
-                    Ocean Portfolio
-                </h3>
-
-                <p>
-                    เว็บไซต์ Portfolio
-                    สำหรับนำเสนอผลงานและตัวตน
-                </p>
-
-                <a
-                    href="index.html"
-                    class="contact-link"
-                >
-                    กลับหน้าแรก →
-                </a>
-
-            </article>
-
-
-            <article class="contact-card">
-
-                <div class="contact-icon">
-                    💬
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h3>โซเชียลมีเดีย (Social)</h3>
+                    <p>Facebook / Line / Instagram</p>
+                    <a href="#" class="contact-btn">ติดตามผลงาน</a>
                 </div>
-
-                <span>
-                    SOCIAL
-                </span>
-
-                <h3>
-                    [กรอก Social]
-                </h3>
-
-                <p>
-                    สามารถใส่ช่องทาง Social Media
-                    ที่ต้องการให้ผู้ชมติดต่อได้
-                </p>
-
-                <a
-                    href="mailto:[กรอกอีเมล]"
-                    class="contact-link"
-                >
-                    ติดต่อ →
-                </a>
-
-            </article>
-
-
-        </div>
-
-    </section>
-
-
-    <section class="contact-cta">
-
-        <div class="contact-cta-inner">
-
-            <div class="cta-graphic">
-                🌊
             </div>
 
-            <div>
-
-                <span class="section-label">
-                    THANK YOU
-                </span>
-
-                <h2>
-                    ขอบคุณที่แวะมาเยี่ยมชม
-                </h2>
-
-                <p>
-                    หวังว่าเว็บไซต์เล็ก ๆ แห่งนี้
-                    จะทำให้คุณได้รู้จักฉันมากขึ้น
-                </p>
-
+            <!-- Call To Action Box -->
+            <div class="cta-box">
+                <h3><i class="fa-solid fa-bullhorn"></i> สามารถติดต่อฉันได้ตลอดเวลา!</h3>
+                <p>ขอบคุณที่เข้ามาเยี่ยมชมเว็บไซต์ Portfolio โครงงานวิชาคอมพิวเตอร์ของฉันครับ</p>
             </div>
+        </section>
+    </main>
 
-            <a
-                href="index.html"
-                class="btn btn-primary"
-            >
-                กลับหน้าแรก →
-            </a>
-
-        </div>
-
-    </section>
-
-</main>
-
-
-<footer class="site-footer">
-
-    <div class="footer-inner">
-
-        <div class="footer-brand">
-
-            <div class="logo footer-logo">
-                🌊 OceanPortfolio
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3><i class="fa-solid fa-shield-halved"></i> STUDENT PORTFOLIO</h3>
+                <p>โครงงานวิชาคอมพิวเตอร์ ชั้นมัธยมศึกษาปีที่ 3</p>
             </div>
-
-            <p>
-                My journey. My world. My ocean.
-            </p>
-
+            <div class="footer-nav">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
+            </div>
         </div>
-
-
-        <div class="footer-nav">
-
-            <h4>Navigation</h4>
-
-            <a href="index.html">หน้าแรก</a>
-            <a href="profile.html">ประวัติส่วนตัว</a>
-            <a href="education.html">การศึกษา</a>
-            <a href="hobby.html">งานอดิเรก</a>
-            <a href="contact.html">ติดต่อ</a>
-
+        <div class="footer-bottom">
+            <p>&copy; 2026 Student Portfolio Project. All Rights Reserved.</p>
         </div>
+    </footer>
 
-
-        <div class="footer-info">
-
-            <h4>Student</h4>
-
-            <p>[กรอกชื่อ]</p>
-            <p>ม.3/[กรอกห้อง]</p>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 [กรอกชื่อ] — Ocean Student Portfolio
-        </p>
-
-        <span>
-            Designed with 🌊
-        </span>
-
-    </div>
-
-</footer>
-
-
-<script>
-
-const fishPool = [
-    "🐠","🐟","🐡","🦈",
-    "🐬","🐙","🦑","🪼"
-];
-
-let availableFish = [...fishPool];
-
-document.addEventListener("contextmenu", function(event) {
-
-    event.preventDefault();
-
-    if (availableFish.length === 0) {
-        availableFish = [...fishPool];
-    }
-
-    const index =
-        Math.floor(Math.random() * availableFish.length);
-
-    const fish =
-        document.createElement("div");
-
-    fish.className =
-        "interactive-fish";
-
-    fish.textContent =
-        availableFish.splice(index, 1)[0];
-
-    fish.style.left =
-        event.clientX + "px";
-
-    fish.style.top =
-        event.clientY + "px";
-
-    document.body.appendChild(fish);
-
-    setTimeout(() => fish.remove(), 6500);
-
-
-    if (Math.random() > 0.55) {
-
-        const whale =
-            document.createElement("div");
-
-        whale.className =
-            "interactive-whale";
-
-        whale.textContent =
-            "🐋";
-
-        whale.style.top =
-            Math.max(100, event.clientY - 100) + "px";
-
-        document.body.appendChild(whale);
-
-        setTimeout(() => whale.remove(), 10000);
-
-    }
-
-});
-
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
