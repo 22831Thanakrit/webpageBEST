@@ -1,435 +1,96 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="งานอดิเรกและความสนใจของนักเรียน">
-
-    <title>Ocean Portfolio | งานอดิเรก</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>งานอดิเรก - Student Tactical Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+    <div class="bg-overlay"></div>
+    <div class="warzone-bg" style="background-image: url('bg.jpg');"></div>
+    <canvas id="emberCanvas"></canvas>
 
-<header class="site-header">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-shield-halved"></i> PORTFOLIO<span>.M3</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> หน้าแรก</a></li>
+                <li><a href="profile.html"><i class="fa-solid fa-user"></i> ประวัติส่วนตัว</a></li>
+                <li><a href="education.html"><i class="fa-solid fa-graduation-cap"></i> การศึกษา</a></li>
+                <li><a href="hobby.html" class="active"><i class="fa-solid fa-gamepad"></i> งานอดิเรก</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav class="navbar">
-
-        <a href="index.html" class="logo">
-            <span class="logo-mark">🌊</span>
-            <span>
-                Ocean<span class="logo-accent">Portfolio</span>
-            </span>
-        </a>
-
-        <div class="nav-links">
-
-            <a href="index.html">
-                หน้าแรก
-            </a>
-
-            <a href="profile.html">
-                ประวัติส่วนตัว
-            </a>
-
-            <a href="education.html">
-                การศึกษา
-            </a>
-
-            <a href="hobby.html" class="active">
-                งานอดิเรก
-            </a>
-
-            <a href="contact.html">
-                ติดต่อ
-            </a>
-
+    <main class="main-container">
+        <div class="section-header">
+            <h2><i class="fa-solid fa-icons"></i> งานอดิเรก & ความสนใจ (Hobbies & Interests)</h2>
+            <p>กิจกรรมและความชอบที่ช่วยสร้างแรงบันดาลใจในเวลาว่าง</p>
         </div>
-
-    </nav>
-
-</header>
-
-
-<main>
-
-    <section class="page-hero hobby-hero">
-
-        <span class="section-label">
-            HOBBIES & INTERESTS
-        </span>
-
-        <h1>
-            Things I
-            <span class="gradient-text">Love</span>
-        </h1>
-
-        <p>
-            สำรวจสิ่งที่ฉันชอบ
-            และสิ่งที่ทำให้ฉันมีแรงบันดาลใจ
-        </p>
-
-    </section>
-
-
-    <section class="hobby-section section-light">
-
-        <div class="section-heading">
-
-            <span class="section-label">
-                MY FREE TIME
-            </span>
-
-            <h2>
-                งานอดิเรกของฉัน
-            </h2>
-
-            <p>
-                เวลาว่างของฉันไม่ได้มีเพียงอย่างเดียว
-                เพราะโลกแห่งความสนใจนั้นกว้างเหมือนมหาสมุทร
-            </p>
-
-        </div>
-
 
         <div class="hobby-grid">
-
-
-            <article class="hobby-card hobby-feature">
-
-                <div class="hobby-number">
-                    01
-                </div>
-
-                <div class="hobby-icon">
-                    🎮
-                </div>
-
-                <h3>
-                    เกม
-                </h3>
-
-                <p>
-                    ฉันชอบเล่นเกมเพื่อความสนุก
-                    และบางครั้งก็สนใจเรื่องการออกแบบเกม
-                    และเทคโนโลยีที่อยู่เบื้องหลังเกม
-                </p>
-
-                <div class="hobby-line"></div>
-
-            </article>
-
-
-            <article class="hobby-card">
-
-                <div class="hobby-number">
-                    02
-                </div>
-
-                <div class="hobby-icon">
-                    ⚽
-                </div>
-
-                <h3>
-                    กีฬา
-                </h3>
-
-                <p>
-                    การออกกำลังกายและเล่นกีฬา
-                    ช่วยให้ได้ผ่อนคลายและใช้เวลาร่วมกับเพื่อน
-                </p>
-
-                <div class="hobby-line"></div>
-
-            </article>
-
-
-            <article class="hobby-card">
-
-                <div class="hobby-number">
-                    03
-                </div>
-
-                <div class="hobby-icon">
-                    🎵
-                </div>
-
-                <h3>
-                    เพลง
-                </h3>
-
-                <p>
-                    เพลงเป็นหนึ่งในสิ่งที่ช่วยสร้างบรรยากาศ
-                    และทำให้การทำงานหรือการพักผ่อนสนุกขึ้น
-                </p>
-
-                <div class="hobby-line"></div>
-
-            </article>
-
-
-            <article class="hobby-card">
-
-                <div class="hobby-number">
-                    04
-                </div>
-
-                <div class="hobby-icon">
-                    🎬
-                </div>
-
-                <h3>
-                    ภาพยนตร์
-                </h3>
-
-                <p>
-                    ฉันชอบชมภาพยนตร์เพื่อดูเรื่องราว
-                    เทคนิคการเล่าเรื่อง และงานภาพ
-                </p>
-
-                <div class="hobby-line"></div>
-
-            </article>
-
-
-            <article class="hobby-card">
-
-                <div class="hobby-number">
-                    05
-                </div>
-
-                <div class="hobby-icon">
-                    💻
-                </div>
-
-                <h3>
-                    เทคโนโลยี
-                </h3>
-
-                <p>
-                    สนใจคอมพิวเตอร์ AI เว็บไซต์
-                    และเทคโนโลยีใหม่ ๆ
-                </p>
-
-                <div class="hobby-line"></div>
-
-            </article>
-
-
-            <article class="hobby-card">
-
-                <div class="hobby-number">
-                    06
-                </div>
-
-                <div class="hobby-icon">
-                    📷
-                </div>
-
-                <h3>
-                    การถ่ายภาพ
-                </h3>
-
-                <p>
-                    สนใจการถ่ายภาพและการสร้างภาพ
-                    เพื่อบันทึกช่วงเวลาที่น่าสนใจ
-                </p>
-
-                <div class="hobby-line"></div>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <section class="interest-banner">
-
-        <div class="interest-content">
-
-            <span class="section-label">
-                MY INTEREST
-            </span>
-
-            <h2>
-                [กรอกความสนใจ]
-            </h2>
-
-            <p>
-                สิ่งที่ฉันกำลังสนใจและอยากเรียนรู้
-                ให้มากขึ้นในอนาคต
-            </p>
-
-        </div>
-
-        <div class="interest-visual">
-
-            <div class="planet-ring"></div>
-
-            <div class="interest-symbol">
-                💻
+            <div class="hobby-card">
+                <div class="hobby-icon"><i class="fa-solid fa-gamepad"></i></div>
+                <h3>🎮 เล่นเกมวางแผน / เกมต่อสู้</h3>
+                <p>ชอบเล่นเกมแนว FPS และ Strategy ที่ต้องใช้ความคิดสร้างสรรค์ การทำงานเป็นทีม และการวางแผนอย่างมีระบบ</p>
             </div>
 
-        </div>
-
-    </section>
-
-
-    <section class="section-light interaction-section">
-
-        <div class="interaction-box">
-
-            <div class="interaction-icon">
-                🐋
+            <div class="hobby-card">
+                <div class="hobby-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3>💻 เขียนโปรแกรม & เว็บไซต์</h3>
+                <p>สนใจฝึกฝนทักษะการเขียนโค้ด HTML, CSS และศึกษาเทคโนโลยีใหม่ๆ เพื่อต่อยอดความรู้ด้านคอมพิวเตอร์</p>
             </div>
 
-            <div>
-
-                <span class="section-label">
-                    INTERACTIVE OCEAN
-                </span>
-
-                <h2>
-                    ลองสำรวจมหาสมุทร
-                </h2>
-
-                <p>
-                    คลิกขวาบนหน้าเว็บไซต์
-                    เพื่อเรียกสิ่งมีชีวิตในมหาสมุทร
-                    ออกมาว่ายเล่น
-                </p>
-
+            <div class="hobby-card">
+                <div class="hobby-icon"><i class="fa-solid fa-music"></i></div>
+                <h3>🎵 ฟังเพลง & ดนตรี</h3>
+                <p>การฟังเพลงช่วยผ่อนคลายความเครียดจากการเรียน ช่วยเพิ่มสมาธิในการอ่านหนังสือและการทำงาน</p>
             </div>
 
-        </div>
-
-    </section>
-
-</main>
-
-
-<footer class="site-footer">
-
-    <div class="footer-inner">
-
-        <div class="footer-brand">
-
-            <div class="logo footer-logo">
-                🌊 OceanPortfolio
+            <div class="hobby-card">
+                <div class="hobby-icon"><i class="fa-solid fa-futbol"></i></div>
+                <h3>⚽ ออกกำลังกาย & กีฬา</h3>
+                <p>เล่นกีฬากับเพื่อนๆ ในช่วงเย็น เพื่อสุขภาพที่แข็งแรงและเสริมสร้างความสัมพันธ์ในกลุ่มเพื่อน</p>
             </div>
 
-            <p>
-                My journey. My world. My ocean.
-            </p>
+            <div class="hobby-card">
+                <div class="hobby-icon"><i class="fa-solid fa-film"></i></div>
+                <h3>🎬 ชมภาพยนตร์แนวแอคชั่น</h3>
+                <p>ชื่นชอบหนังแนวสงคราม ไซไฟ และสืบสวนสอบสวน ที่มีพล็อตเรื่องตื่นเต้นและภาพ visual ถ่ายทำได้อย่างน่าประทับใจ</p>
+            </div>
 
+            <div class="hobby-card">
+                <div class="hobby-icon"><i class="fa-solid fa-camera"></i></div>
+                <h3>📷 การถ่ายภาพ & ตัดต่อ</h3>
+                <p>ชอบบันทึกภาพบรรยากาศรอบตัว คลังภาพวิวทิวทัศน์ และทดลองฝึกตัดต่อวิดีโอสั้น</p>
+            </div>
         </div>
+    </main>
 
-        <div class="footer-nav">
-
-            <h4>Navigation</h4>
-
-            <a href="index.html">หน้าแรก</a>
-            <a href="profile.html">ประวัติส่วนตัว</a>
-            <a href="education.html">การศึกษา</a>
-            <a href="hobby.html">งานอดิเรก</a>
-            <a href="contact.html">ติดต่อ</a>
-
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3><i class="fa-solid fa-shield-halved"></i> STUDENT PORTFOLIO</h3>
+                <p>โครงงานวิชาคอมพิวเตอร์ ชั้นมัธยมศึกษาปีที่ 3</p>
+            </div>
+            <div class="footer-nav">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
+            </div>
         </div>
-
-        <div class="footer-info">
-
-            <h4>Student</h4>
-
-            <p>[กรอกชื่อ]</p>
-            <p>ม.3/[กรอกห้อง]</p>
-
+        <div class="footer-bottom">
+            <p>&copy; 2026 Student Portfolio Project. All Rights Reserved.</p>
         </div>
+    </footer>
 
-    </div>
-
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 [กรอกชื่อ] — Ocean Student Portfolio
-        </p>
-
-        <span>Designed with 🌊</span>
-
-    </div>
-
-</footer>
-
-
-<script>
-
-const fishPool = [
-    "🐠","🐟","🐡","🦈",
-    "🐬","🐙","🦑","🪼"
-];
-
-let availableFish = [...fishPool];
-
-document.addEventListener("contextmenu", function(event) {
-
-    event.preventDefault();
-
-    if (availableFish.length === 0) {
-        availableFish = [...fishPool];
-    }
-
-    const index =
-        Math.floor(Math.random() * availableFish.length);
-
-    const fish =
-        document.createElement("div");
-
-    fish.className =
-        "interactive-fish";
-
-    fish.textContent =
-        availableFish.splice(index, 1)[0];
-
-    fish.style.left =
-        event.clientX + "px";
-
-    fish.style.top =
-        event.clientY + "px";
-
-    document.body.appendChild(fish);
-
-    setTimeout(() => fish.remove(), 6500);
-
-
-    if (Math.random() > 0.55) {
-
-        const whale =
-            document.createElement("div");
-
-        whale.className =
-            "interactive-whale";
-
-        whale.textContent = "🐋";
-
-        whale.style.top =
-            Math.max(100, event.clientY - 100) + "px";
-
-        document.body.appendChild(whale);
-
-        setTimeout(() => whale.remove(), 10000);
-
-    }
-
-});
-
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
