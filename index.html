@@ -3,82 +3,473 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรก | Space Portfolio</title>
+
+    <meta name="description"
+          content="Ocean Student Portfolio เว็บไซต์แนะนำตัวของนักเรียนชั้นมัธยมศึกษาปีที่ 3">
+
+    <title>Ocean Portfolio | หน้าแรก</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">🚀 GALAXY <span>PORTFOLIO</span></div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">หน้าแรก</a></li>
-                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
-                <li><a href="education.html">การศึกษา</a></li>
-                <li><a href="hobby.html">งานอดิเรก</a></li>
-                <li><a href="contact.html">ติดต่อ</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="site-header">
 
-    <main>
-        <section class="hero-section">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <span class="badge">👨‍🚀 นักเรียนชั้นมัธยมศึกษาปีที่ 3</span>
-                    <h1>ยินดีต้อนรับสู่ <br><span class="text-gradient">จักรวาลแห่งการเรียนรู้</span></h1>
-                    <p class="hero-description">
-                        สวัสดีครับ! ผม ธนกฤต ธนันชัย นักเรียนชั้น ม.3/2 ที่มีความหลงใหลในเทคโนโลยี อวกาศ และการสร้างสรรค์สิ่งใหม่ๆ เว็บไซต์นี้คือพื้นที่รวบรวมตัวตนและการเดินทางของผม
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="profile.html" class="btn btn-primary">รู้จักฉันมากขึ้น ✨</a>
-                        <a href="hobby.html" class="btn btn-secondary">ดูงานอดิเรก 🎮</a>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">🌊</span>
+            <span>
+                Ocean<span class="logo-accent">Portfolio</span>
+            </span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html" class="active">หน้าแรก</a>
+            <a href="profile.html">ประวัติส่วนตัว</a>
+            <a href="education.html">การศึกษา</a>
+            <a href="hobby.html">งานอดิเรก</a>
+            <a href="contact.html">ติดต่อ</a>
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero ocean-world">
+
+        <div class="ocean-glow"></div>
+
+        <div class="sun-rays"></div>
+
+        <!-- Bubbles -->
+        <span class="bubble bubble-1"></span>
+        <span class="bubble bubble-2"></span>
+        <span class="bubble bubble-3"></span>
+        <span class="bubble bubble-4"></span>
+        <span class="bubble bubble-5"></span>
+        <span class="bubble bubble-6"></span>
+
+        <!-- Background fish -->
+        <div class="swimming-fish fish-a">🐟</div>
+        <div class="swimming-fish fish-b">🐠</div>
+        <div class="swimming-fish fish-c">🐟</div>
+
+        <div class="hero-grid">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    <span class="status-dot"></span>
+                    WELCOME TO MY DIGITAL OCEAN
+                </div>
+
+                <h1>
+                    Dive Into
+                    <span class="gradient-text">My World</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    สวัสดีครับ/ค่ะ ฉันคือ
+                    <strong>[กรอกชื่อ]</strong>
+                    นักเรียนชั้นมัธยมศึกษาปีที่ 3
+                    ผู้ที่ชอบเรียนรู้สิ่งใหม่ ๆ
+                    และสนใจเทคโนโลยี ความคิดสร้างสรรค์
+                    และโลกดิจิทัล
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="profile.html" class="btn btn-primary">
+                        รู้จักฉันมากขึ้น
+                        <span>→</span>
+                    </a>
+
+                    <a href="hobby.html" class="btn btn-glass">
+                        ดูงานอดิเรกของฉัน
+                    </a>
+
+                </div>
+
+                <div class="hero-mini-info">
+
+                    <div>
+                        <strong>01</strong>
+                        <span>Student</span>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <span>Grade M.3</span>
+                    </div>
+
+                    <div>
+                        <strong>∞</strong>
+                        <span>Dreams</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Profile Visual -->
+            <div class="hero-profile">
+
+                <div class="profile-orbit orbit-one"></div>
+                <div class="profile-orbit orbit-two"></div>
+
+                <div class="profile-aura"></div>
+
+                <div class="profile-frame">
+
+                    <img
+                        src="https://placehold.co/600x700/E3F2FD/0D47A1?text=PROFILE"
+                        alt="รูปโปรไฟล์ของฉัน"
+                    >
+
+                    <div class="profile-badge">
+                        <span>✦</span>
+                        Student Portfolio
+                    </div>
+
+                </div>
+
+                <div class="floating-card floating-card-one">
+                    <span>🎓</span>
+                    <div>
+                        <small>Education</small>
+                        <strong>มัธยมศึกษาปีที่ 3</strong>
                     </div>
                 </div>
 
-                <div class="hero-image-wrapper">
-                    <div class="glow-effect"></div>
-                    <img src="images/download (2).jpg" alt="รูปโปรไฟล์ของฉัน" class="hero-img">
+                <div class="floating-card floating-card-two">
+                    <span>💻</span>
+                    <div>
+                        <small>Interest</small>
+                        <strong>Technology</strong>
+                    </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="container quick-stats">
-            <div class="grid grid-3">
-                <div class="glass-card stat-card">
-                    <h3>🌌 เป้าหมาย</h3>
-                    <p>มุ่งมั่นเรียนรู้เทคโนโลยี และสำรวจสิ่งใหม่ๆ อยู่เสมอ</p>
-                </div>
-                <div class="glass-card stat-card">
-                    <h3>📚 การศึกษา</h3>
-                    <p>นักเรียนชั้น ม.3 โรงเรียน จอมทอง</p>
-                </div>
-                <div class="glass-card stat-card">
-                    <h3>💡 วิชาที่ชอบ</h3>
-                    <p>คอมพิวเตอร์, วิทยาศาสตร์</p>
-                </div>
             </div>
-        </section>
-    </main>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3>🚀 GALAXY PORTFOLIO</h3>
-                <p>โครงงานวิชาคอมพิวเตอร์ ชั้นมัธยมศึกษาปีที่ 3</p>
-            </div>
-            <div class="footer-links">
-                <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติส่วนตัว</a>
-                <a href="education.html">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
-            </div>
         </div>
-        <div class="copyright">
-            <p>&copy; 2026 ธนกฤต ธนันชัย. All Rights Reserved.</p>
+
+
+        <!-- Ocean Floor -->
+        <div class="ocean-floor">
+
+            <div class="coral coral-one">🪸</div>
+            <div class="coral coral-two">🪸</div>
+            <div class="coral coral-three">🌿</div>
+
+            <div class="floor-rock rock-one"></div>
+            <div class="floor-rock rock-two"></div>
+
         </div>
-    </footer>
+
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="section section-light">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                ABOUT MY JOURNEY
+            </span>
+
+            <h2>
+                สำรวจตัวตนของฉัน
+            </h2>
+
+            <p>
+                ทุกคนมีเรื่องราวของตัวเอง
+                และเว็บไซต์นี้คือพื้นที่เล็ก ๆ
+                ที่ฉันใช้เล่าเรื่องราวเกี่ยวกับตัวฉัน
+            </p>
+
+        </div>
+
+
+        <div class="intro-grid">
+
+            <article class="feature-panel feature-main">
+
+                <div class="feature-icon">
+                    🌊
+                </div>
+
+                <span class="feature-number">01</span>
+
+                <h3>
+                    My Digital Ocean
+                </h3>
+
+                <p>
+                    เปรียบเทียบโลกแห่งการเรียนรู้ของฉัน
+                    เหมือนมหาสมุทรที่เต็มไปด้วยสิ่งใหม่ ๆ
+                    ให้ค้นหาอยู่เสมอ
+                </p>
+
+                <a href="profile.html" class="text-link">
+                    สำรวจตัวฉัน →
+                </a>
+
+            </article>
+
+
+            <article class="feature-panel">
+
+                <div class="feature-icon">
+                    🎓
+                </div>
+
+                <span class="feature-number">02</span>
+
+                <h3>
+                    Education
+                </h3>
+
+                <p>
+                    เรื่องราวเส้นทางการศึกษาของฉัน
+                    ตั้งแต่อดีตจนถึงปัจจุบัน
+                </p>
+
+                <a href="education.html" class="text-link">
+                    ดูประวัติการศึกษา →
+                </a>
+
+            </article>
+
+
+            <article class="feature-panel">
+
+                <div class="feature-icon">
+                    🐠
+                </div>
+
+                <span class="feature-number">03</span>
+
+                <h3>
+                    My Hobbies
+                </h3>
+
+                <p>
+                    สิ่งที่ฉันชอบทำในเวลาว่าง
+                    และสิ่งที่สร้างแรงบันดาลใจให้ฉัน
+                </p>
+
+                <a href="hobby.html" class="text-link">
+                    ดูงานอดิเรก →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- STATS -->
+    <section class="stats-section">
+
+        <div class="stats-inner">
+
+            <div class="stat-item">
+                <strong>01</strong>
+                <span>Student</span>
+            </div>
+
+            <div class="stat-item">
+                <strong>M.3</strong>
+                <span>Current Level</span>
+            </div>
+
+            <div class="stat-item">
+                <strong>∞</strong>
+                <span>Ideas</span>
+            </div>
+
+            <div class="stat-item">
+                <strong>100%</strong>
+                <span>Curiosity</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta-section">
+
+        <div class="cta-wave"></div>
+
+        <div class="cta-content">
+
+            <span class="section-label">
+                KEEP EXPLORING
+            </span>
+
+            <h2>
+                Ready to dive deeper?
+            </h2>
+
+            <p>
+                ลองสำรวจเรื่องราว การศึกษา
+                และความสนใจของฉันเพิ่มเติม
+            </p>
+
+            <a href="contact.html" class="btn btn-white">
+                ติดต่อฉัน →
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-brand">
+
+            <div class="logo footer-logo">
+                <span class="logo-mark">🌊</span>
+                OceanPortfolio
+            </div>
+
+            <p>
+                Modern Student Portfolio
+                <br>
+                My journey. My world. My ocean.
+            </p>
+
+        </div>
+
+
+        <div class="footer-nav">
+
+            <h4>Navigation</h4>
+
+            <a href="index.html">หน้าแรก</a>
+            <a href="profile.html">ประวัติส่วนตัว</a>
+            <a href="education.html">การศึกษา</a>
+            <a href="hobby.html">งานอดิเรก</a>
+            <a href="contact.html">ติดต่อ</a>
+
+        </div>
+
+
+        <div class="footer-info">
+
+            <h4>Student</h4>
+
+            <p>[กรอกชื่อ]</p>
+            <p>ม.3/[กรอกห้อง]</p>
+            <p>[กรอกชื่อโรงเรียน]</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 [กรอกชื่อ] — Ocean Student Portfolio
+        </p>
+
+        <span>
+            Designed with 🌊
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- Interactive Ocean -->
+<script>
+
+const fishPool = [
+    "🐠",
+    "🐟",
+    "🐡",
+    "🦈",
+    "🐬",
+    "🐙",
+    "🦑",
+    "🪼"
+];
+
+let availableFish = [...fishPool];
+
+function getRandomFish() {
+
+    if (availableFish.length === 0) {
+        availableFish = [...fishPool];
+    }
+
+    const randomIndex =
+        Math.floor(Math.random() * availableFish.length);
+
+    return availableFish.splice(randomIndex, 1)[0];
+}
+
+
+document.addEventListener("contextmenu", function(event) {
+
+    event.preventDefault();
+
+    const fish = document.createElement("div");
+
+    fish.className = "interactive-fish";
+
+    fish.textContent = getRandomFish();
+
+    fish.style.left = event.clientX + "px";
+    fish.style.top = event.clientY + "px";
+
+    document.body.appendChild(fish);
+
+    setTimeout(function() {
+        fish.remove();
+    }, 6500);
+
+
+    // Every third interaction creates a whale
+    if (Math.random() > 0.55) {
+
+        const whale = document.createElement("div");
+
+        whale.className = "interactive-whale";
+
+        whale.textContent = "🐋";
+
+        whale.style.top =
+            Math.max(80, event.clientY - 100) + "px";
+
+        document.body.appendChild(whale);
+
+        setTimeout(function() {
+            whale.remove();
+        }, 10000);
+    }
+
+});
+
+</script>
 
 </body>
 </html>
