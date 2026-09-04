@@ -1,378 +1,103 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="ประวัติส่วนตัวของนักเรียน">
-
-    <title>Ocean Portfolio | ประวัติส่วนตัว</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติส่วนตัว - Student Tactical Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+    <div class="bg-overlay"></div>
+    <div class="warzone-bg" style="background-image: url('bg.jpg');"></div>
+    <canvas id="emberCanvas"></canvas>
 
-<header class="site-header">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-shield-halved"></i> PORTFOLIO<span>.M3</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> หน้าแรก</a></li>
+                <li><a href="profile.html" class="active"><i class="fa-solid fa-user"></i> ประวัติส่วนตัว</a></li>
+                <li><a href="education.html"><i class="fa-solid fa-graduation-cap"></i> การศึกษา</a></li>
+                <li><a href="hobby.html"><i class="fa-solid fa-gamepad"></i> งานอดิเรก</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav class="navbar">
-
-        <a href="index.html" class="logo">
-            <span class="logo-mark">🌊</span>
-            <span>
-                Ocean<span class="logo-accent">Portfolio</span>
-            </span>
-        </a>
-
-        <div class="nav-links">
-
-            <a href="index.html">
-                หน้าแรก
-            </a>
-
-            <a href="profile.html" class="active">
-                ประวัติส่วนตัว
-            </a>
-
-            <a href="education.html">
-                การศึกษา
-            </a>
-
-            <a href="hobby.html">
-                งานอดิเรก
-            </a>
-
-            <a href="contact.html">
-                ติดต่อ
-            </a>
-
+    <main class="main-container">
+        <div class="section-header">
+            <h2><i class="fa-solid fa-address-card"></i> ประวัติส่วนตัว (Profile)</h2>
+            <p>ข้อมูลพื้นฐานและตัวตนของฉัน</p>
         </div>
 
-    </nav>
-
-</header>
-
-
-<main>
-
-    <section class="page-hero">
-
-        <div class="page-hero-glow"></div>
-
-        <span class="section-label">
-            PROFILE
-        </span>
-
-        <h1>
-            About <span class="gradient-text">Me</span>
-        </h1>
-
-        <p>
-            ทำความรู้จักกับตัวตน
-            ความสนใจ และเรื่องราวของฉัน
-        </p>
-
-    </section>
-
-
-    <section class="profile-section section-light">
-
-        <div class="profile-layout">
-
-            <div class="large-profile">
-
-                <div class="profile-image-wrap">
-
-                    <img
-                        src="https://placehold.co/600x750/E3F2FD/0D47A1?text=MY+PHOTO"
-                        alt="รูปโปรไฟล์ของฉัน"
-                    >
-
-                </div>
-
-                <div class="profile-caption">
-
-                    <span>
-                        STUDENT PORTFOLIO
-                    </span>
-
-                    <strong>
-                        [กรอกชื่อ]
-                    </strong>
-
-                </div>
-
+        <section class="profile-grid">
+            <div class="profile-card-left">
+                <img src="https://placehold.co/350x350/1976D2/FFFFFF?text=MY+PROFILE" alt="รูปโปรไฟล์ของฉัน" class="profile-avatar">
+                <h3>[กรอกชื่อ-นามสกุล]</h3>
+                <span class="status-tag"><i class="fa-solid fa-circle"></i> นักเรียนชั้น ม.3</span>
             </div>
 
-
-            <div class="profile-details">
-
-                <span class="section-label">
-                    NICE TO MEET YOU
-                </span>
-
-                <h2>
-                    สวัสดีครับ/ค่ะ 👋
-                </h2>
-
-                <p class="lead">
-                    ฉันชื่อ <strong>[กรอกชื่อ]</strong>
-                    ชื่อเล่น <strong>[กรอกชื่อเล่น]</strong>
-                    ปัจจุบันกำลังศึกษาอยู่ในระดับ
-                    มัธยมศึกษาปีที่ 3
-                </p>
-
-
+            <div class="profile-card-right">
+                <h3>ข้อมูลส่วนตัว</h3>
                 <div class="info-grid">
-
-                    <div class="info-box">
-                        <span>ชื่อ-นามสกุล</span>
-                        <strong>[กรอกชื่อ]</strong>
+                    <div class="info-item">
+                        <span class="label"><i class="fa-solid fa-signature"></i> ชื่อเล่น:</span>
+                        <span class="value">[กรอกชื่อเล่น]</span>
                     </div>
-
-                    <div class="info-box">
-                        <span>ชื่อเล่น</span>
-                        <strong>[กรอกชื่อเล่น]</strong>
+                    <div class="info-item">
+                        <span class="label"><i class="fa-solid fa-cake-candles"></i> อายุ:</span>
+                        <span class="value">[กรอกอายุ] ปี</span>
                     </div>
-
-                    <div class="info-box">
-                        <span>อายุ</span>
-                        <strong>[กรอกอายุ] ปี</strong>
+                    <div class="info-item">
+                        <span class="label"><i class="fa-solid fa-calendar-day"></i> วันเกิด:</span>
+                        <span class="value">[กรอกวันเกิด]</span>
                     </div>
-
-                    <div class="info-box">
-                        <span>วันเกิด</span>
-                        <strong>[กรอกวันเกิด]</strong>
+                    <div class="info-item">
+                        <span class="label"><i class="fa-solid fa-location-dot"></i> จังหวัด:</span>
+                        <span class="value">[กรอกจังหวัด]</span>
                     </div>
-
-                    <div class="info-box">
-                        <span>โรงเรียน</span>
-                        <strong>[กรอกชื่อโรงเรียน]</strong>
+                    <div class="info-item">
+                        <span class="label"><i class="fa-solid fa-book-open"></i> วิชาที่ชอบ:</span>
+                        <span class="value">[กรอกวิชาที่ชอบ]</span>
                     </div>
-
-                    <div class="info-box">
-                        <span>ระดับชั้น</span>
-                        <strong>ม.3/[กรอกห้อง]</strong>
+                    <div class="info-item">
+                        <span class="label"><i class="fa-solid fa-heart"></i> ความสนใจ:</span>
+                        <span class="value">[กรอกความสนใจ]</span>
                     </div>
-
-                    <div class="info-box">
-                        <span>จังหวัด</span>
-                        <strong>[กรอกจังหวัด]</strong>
-                    </div>
-
-                    <div class="info-box">
-                        <span>วิชาที่ชอบ</span>
-                        <strong>[กรอกวิชาที่ชอบ]</strong>
-                    </div>
-
                 </div>
 
+                <div class="about-me-box">
+                    <h4><i class="fa-solid fa-quote-left"></i> เกี่ยวกับฉัน</h4>
+                    <p>
+                        ผมเป็นคนที่สนใจในเทคโนโลยีการสื่อสาร คอมพิวเตอร์ และการสร้างสรรค์สิ่งใหม่ๆ ชอบเรียนรู้ผ่านการลงมือทำจริง และพร้อมที่จะพัฒนาตนเองเพื่อรับมือกับความท้าทายใหม่ๆ อยู่เสมอ
+                    </p>
+                </div>
             </div>
+        </section>
+    </main>
 
-        </div>
-
-    </section>
-
-
-    <section class="about-section">
-
-        <div class="about-content">
-
-            <div>
-
-                <span class="section-label">
-                    MY STORY
-                </span>
-
-                <h2>
-                    เกี่ยวกับฉัน
-                </h2>
-
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3><i class="fa-solid fa-shield-halved"></i> STUDENT PORTFOLIO</h3>
+                <p>โครงงานวิชาคอมพิวเตอร์ ชั้นมัธยมศึกษาปีที่ 3</p>
             </div>
-
-            <p>
-                ฉันเป็นนักเรียนที่มีความสนใจในการเรียนรู้
-                และชอบค้นหาสิ่งใหม่ ๆ รอบตัว
-                โดยเฉพาะด้านเทคโนโลยี การออกแบบ
-                คอมพิวเตอร์ และความคิดสร้างสรรค์
-            </p>
-
-            <p>
-                ฉันเชื่อว่าการเรียนรู้ไม่ได้เกิดขึ้นเฉพาะ
-                ในห้องเรียนเท่านั้น แต่ยังเกิดขึ้นจาก
-                การทดลอง การลงมือทำ และการค้นพบ
-                สิ่งที่เราสนใจด้วยตัวเอง
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <section class="values-section section-light">
-
-        <div class="section-heading">
-
-            <span class="section-label">
-                MY VALUES
-            </span>
-
-            <h2>
-                สิ่งที่ฉันให้ความสำคัญ
-            </h2>
-
-        </div>
-
-
-        <div class="value-grid">
-
-            <article class="value-card">
-                <span>🔎</span>
-                <h3>Curiosity</h3>
-                <p>
-                    ชอบตั้งคำถามและค้นหาคำตอบใหม่ ๆ
-                </p>
-            </article>
-
-            <article class="value-card">
-                <span>💡</span>
-                <h3>Creativity</h3>
-                <p>
-                    ชอบสร้างไอเดียและทดลองสิ่งใหม่
-                </p>
-            </article>
-
-            <article class="value-card">
-                <span>🚀</span>
-                <h3>Growth</h3>
-                <p>
-                    พัฒนาตัวเองและเรียนรู้จากประสบการณ์
-                </p>
-            </article>
-
-        </div>
-
-    </section>
-
-</main>
-
-
-<footer class="site-footer">
-
-    <div class="footer-inner">
-
-        <div class="footer-brand">
-
-            <div class="logo footer-logo">
-                🌊 OceanPortfolio
+            <div class="footer-nav">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
             </div>
-
-            <p>
-                My journey. My world. My ocean.
-            </p>
-
         </div>
-
-
-        <div class="footer-nav">
-
-            <h4>Navigation</h4>
-
-            <a href="index.html">หน้าแรก</a>
-            <a href="profile.html">ประวัติส่วนตัว</a>
-            <a href="education.html">การศึกษา</a>
-            <a href="hobby.html">งานอดิเรก</a>
-            <a href="contact.html">ติดต่อ</a>
-
+        <div class="footer-bottom">
+            <p>&copy; 2026 Student Portfolio Project. All Rights Reserved.</p>
         </div>
+    </footer>
 
-
-        <div class="footer-info">
-
-            <h4>Student</h4>
-
-            <p>[กรอกชื่อ]</p>
-            <p>ม.3/[กรอกห้อง]</p>
-
-        </div>
-
-    </div>
-
-
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 [กรอกชื่อ] — Ocean Student Portfolio
-        </p>
-
-        <span>Designed with 🌊</span>
-
-    </div>
-
-</footer>
-
-
-<script>
-
-const fishPool = [
-    "🐠","🐟","🐡","🦈",
-    "🐬","🐙","🦑","🪼"
-];
-
-let availableFish = [...fishPool];
-
-document.addEventListener("contextmenu", function(event) {
-
-    event.preventDefault();
-
-    if (availableFish.length === 0) {
-        availableFish = [...fishPool];
-    }
-
-    const index =
-        Math.floor(Math.random() * availableFish.length);
-
-    const fishEmoji =
-        availableFish.splice(index, 1)[0];
-
-    const fish =
-        document.createElement("div");
-
-    fish.className = "interactive-fish";
-    fish.textContent = fishEmoji;
-
-    fish.style.left = event.clientX + "px";
-    fish.style.top = event.clientY + "px";
-
-    document.body.appendChild(fish);
-
-    setTimeout(() => fish.remove(), 6500);
-
-
-    if (Math.random() > 0.55) {
-
-        const whale =
-            document.createElement("div");
-
-        whale.className = "interactive-whale";
-        whale.textContent = "🐋";
-
-        whale.style.top =
-            Math.max(100, event.clientY - 100) + "px";
-
-        document.body.appendChild(whale);
-
-        setTimeout(() => whale.remove(), 10000);
-    }
-
-});
-
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
