@@ -3,101 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัว - Student Tactical Portfolio</title>
+    <meta name="description" content="Profile of Arty">
+    <title>ARTY | Profile</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <div class="bg-overlay"></div>
-    <div class="warzone-bg" style="background-image: url('bg.jpg');"></div>
-    <canvas id="emberCanvas"></canvas>
 
-    <header>
+    <div class="battlefield-bg"></div>
+    <div class="smoke-layer smoke-one"></div>
+    <div class="smoke-layer smoke-two"></div>
+    <div class="ember-layer"></div>
+    <div class="scanlines"></div>
+
+    <header class="site-header">
         <nav class="navbar">
-            <div class="logo">
-                <i class="fa-solid fa-shield-halved"></i> PORTFOLIO<span>.M3</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html"><i class="fa-solid fa-house"></i> หน้าแรก</a></li>
-                <li><a href="profile.html" class="active"><i class="fa-solid fa-user"></i> ประวัติส่วนตัว</a></li>
-                <li><a href="education.html"><i class="fa-solid fa-graduation-cap"></i> การศึกษา</a></li>
-                <li><a href="hobby.html"><i class="fa-solid fa-gamepad"></i> งานอดิเรก</a></li>
-                <li><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> ติดต่อ</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main class="main-container">
-        <div class="section-header">
-            <h2><i class="fa-solid fa-address-card"></i> ประวัติส่วนตัว (Profile)</h2>
-            <p>ข้อมูลพื้นฐานและตัวตนของฉัน</p>
-        </div>
+            <a href="index.html" class="brand">
+                <span class="brand-mark">A</span>
+                <span>
+                    <strong>ARTY</strong>
+                    <small>STUDENT PORTFOLIO</small>
+                </span>
+            </a>
 
-        <section class="profile-grid">
-            <div class="profile-card-left">
-                <img src="https://placehold.co/350x350/1976D2/FFFFFF?text=MY+PROFILE" alt="รูปโปรไฟล์ของฉัน" class="profile-avatar">
-                <h3>[กรอกชื่อ-นามสกุล]</h3>
-                <span class="status-tag"><i class="fa-solid fa-circle"></i> นักเรียนชั้น ม.3</span>
-            </div>
-
-            <div class="profile-card-right">
-                <h3>ข้อมูลส่วนตัว</h3>
-                <div class="info-grid">
-                    <div class="info-item">
-                        <span class="label"><i class="fa-solid fa-signature"></i> ชื่อเล่น:</span>
-                        <span class="value">[กรอกชื่อเล่น]</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="label"><i class="fa-solid fa-cake-candles"></i> อายุ:</span>
-                        <span class="value">[กรอกอายุ] ปี</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="label"><i class="fa-solid fa-calendar-day"></i> วันเกิด:</span>
-                        <span class="value">[กรอกวันเกิด]</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="label"><i class="fa-solid fa-location-dot"></i> จังหวัด:</span>
-                        <span class="value">[กรอกจังหวัด]</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="label"><i class="fa-solid fa-book-open"></i> วิชาที่ชอบ:</span>
-                        <span class="value">[กรอกวิชาที่ชอบ]</span>
-                    </div>
-                    <div class="info-item">
-                        <span class="label"><i class="fa-solid fa-heart"></i> ความสนใจ:</span>
-                        <span class="value">[กรอกความสนใจ]</span>
-                    </div>
-                </div>
-
-                <div class="about-me-box">
-                    <h4><i class="fa-solid fa-quote-left"></i> เกี่ยวกับฉัน</h4>
-                    <p>
-                        ผมเป็นคนที่สนใจในเทคโนโลยีการสื่อสาร คอมพิวเตอร์ และการสร้างสรรค์สิ่งใหม่ๆ ชอบเรียนรู้ผ่านการลงมือทำจริง และพร้อมที่จะพัฒนาตนเองเพื่อรับมือกับความท้าทายใหม่ๆ อยู่เสมอ
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3><i class="fa-solid fa-shield-halved"></i> STUDENT PORTFOLIO</h3>
-                <p>โครงงานวิชาคอมพิวเตอร์ ชั้นมัธยมศึกษาปีที่ 3</p>
-            </div>
-            <div class="footer-nav">
+            <div class="nav-links">
                 <a href="index.html">หน้าแรก</a>
-                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="profile.html" class="active">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
                 <a href="hobby.html">งานอดิเรก</a>
                 <a href="contact.html">ติดต่อ</a>
             </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-hero container">
+
+            <span class="section-number">02 / PERSONAL PROFILE</span>
+
+            <h1>
+                KNOW
+                <span>ARTY</span>
+            </h1>
+
+            <p>
+                ทำความรู้จักกับตัวผมมากขึ้น
+            </p>
+
+        </section>
+
+        <section class="section container">
+
+            <div class="profile-layout">
+
+                <div class="profile-large">
+
+                    <div class="profile-frame">
+
+                        <div class="frame-label">
+                            <span>PROFILE</span>
+                            <span>001</span>
+                        </div>
+
+                        <img
+                            src="https://placehold.co/700x850/0a1726/bdeaff?text=ARTY"
+                            alt="รูปโปรไฟล์ของฉัน"
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="profile-information">
+
+                    <span class="section-number">IDENTITY DATA</span>
+
+                    <h2>ธนกฤต ธนันชัย</h2>
+
+                    <p class="lead">
+                        สวัสดีครับ ผมชื่ออาร์ตี้
+                        เป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3
+                        และสนใจด้านคอมพิวเตอร์และฟุตบอล
+                    </p>
+
+                    <div class="info-grid">
+
+                        <div class="info-box">
+                            <span>ชื่อเล่น</span>
+                            <strong>อาร์ตี้</strong>
+                        </div>
+
+                        <div class="info-box">
+                            <span>อายุ</span>
+                            <strong>14 ปี</strong>
+                        </div>
+
+                        <div class="info-box">
+                            <span>วันเกิด</span>
+                            <strong>12/03/55</strong>
+                        </div>
+
+                        <div class="info-box">
+                            <span>จังหวัด</span>
+                            <strong>[กรอกจังหวัด]</strong>
+                        </div>
+
+                        <div class="info-box">
+                            <span>โรงเรียน</span>
+                            <strong>จอมทอง</strong>
+                        </div>
+
+                        <div class="info-box">
+                            <span>ระดับชั้น</span>
+                            <strong>ม.3/2</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section container">
+
+            <div class="about-panel">
+
+                <div class="about-title">
+                    <span class="section-number">ABOUT ME</span>
+                    <h2>เกี่ยวกับฉัน</h2>
+                </div>
+
+                <div class="about-text">
+
+                    <p>
+                        ผมเป็นนักเรียนที่ชอบเรียนรู้สิ่งใหม่ ๆ
+                        โดยเฉพาะเรื่องคอมพิวเตอร์และเทคโนโลยี
+                        ผมสนุกกับการทดลองสร้างเว็บไซต์
+                        และการออกแบบสิ่งต่าง ๆ ด้วยตัวเอง
+                    </p>
+
+                    <p>
+                        นอกจากคอมพิวเตอร์แล้ว
+                        ผมยังสนใจฟุตบอลและใช้เวลาว่างกับการเล่นเกม
+                        ฟังเพลง และดูภาพยนตร์
+                        ผมอยากพัฒนาความสามารถของตัวเอง
+                        และนำความรู้ไปสร้างผลงานที่น่าสนใจในอนาคต
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <div>
+                <strong>ARTY</strong>
+                <p>Modern Student Portfolio</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติ</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
+            </div>
+
+            <div>
+                <p>ธนกฤต ธนันชัย</p>
+                <small>ม.3/2</small>
+            </div>
+
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Student Portfolio Project. All Rights Reserved.</p>
+
+        <div class="copyright">
+            © 2026 ARTY Student Portfolio
         </div>
+
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener("pointerdown", function(event) {
+
+            if (event.button !== 0) return;
+
+            if (
+                event.target.closest("a") ||
+                event.target.closest("button")
+            ) return;
+
+            const burst = document.createElement("div");
+            burst.className = "click-burst";
+
+            burst.style.left = event.clientX + "px";
+            burst.style.top = event.clientY + "px";
+
+            burst.innerHTML = `
+                <span class="burst-flash"></span>
+                <span class="burst-ring"></span>
+                <span class="burst-ring ring-delay"></span>
+                <span class="burst-spark s1"></span>
+                <span class="burst-spark s2"></span>
+                <span class="burst-spark s3"></span>
+                <span class="burst-spark s4"></span>
+                <span class="burst-spark s5"></span>
+                <span class="burst-spark s6"></span>
+                <span class="burst-smoke"></span>
+            `;
+
+            document.body.appendChild(burst);
+
+            setTimeout(() => burst.remove(), 900);
+        });
+    </script>
+
 </body>
 </html>
