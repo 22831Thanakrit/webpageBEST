@@ -3,94 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรก - Student Tactical Portfolio</title>
+    <meta name="description" content="Arty - Modern Student Portfolio">
+    <title>ARTY | Student Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <!-- Background Dynamic Canvas & FX -->
-    <div class="bg-overlay"></div>
-    <div class="warzone-bg" style="background-image: url('bg.jpg');"></div>
-    <canvas id="emberCanvas"></canvas>
 
-    <!-- Navigation Bar -->
-    <header>
+    <!-- Background Effects -->
+    <div class="battlefield-bg"></div>
+    <div class="smoke-layer smoke-one"></div>
+    <div class="smoke-layer smoke-two"></div>
+    <div class="ember-layer"></div>
+    <div class="scanlines"></div>
+
+    <!-- Navigation -->
+    <header class="site-header">
         <nav class="navbar">
-            <div class="logo">
-                <i class="fa-solid fa-shield-halved"></i> PORTFOLIO<span>.M3</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> หน้าแรก</a></li>
-                <li><a href="profile.html"><i class="fa-solid fa-user"></i> ประวัติส่วนตัว</a></li>
-                <li><a href="education.html"><i class="fa-solid fa-graduation-cap"></i> การศึกษา</a></li>
-                <li><a href="hobby.html"><i class="fa-solid fa-gamepad"></i> งานอดิเรก</a></li>
-                <li><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> ติดต่อ</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <main class="main-container">
-        <section class="hero-section">
-            <div class="hero-content">
-                <span class="badge"><i class="fa-solid fa-crosshair"></i> STUDENT PORTFOLIO - CLASS M.3</span>
-                <h1>ยินดีต้อนรับสู่ <br><span class="highlight-text">แฟ้มสะสมผลงาน</span></h1>
-                <p class="hero-desc">
-                    สวัสดีครับ! ผมเป็นนักเรียนชั้นมัธยมศึกษาปีที่ 3 ที่มีความสนใจในเทคโนโลยี การออกแบบเว็บไซต์ และการเรียนรู้สิ่งใหม่ๆ เว็บไซต์นี้จัดทำขึ้นเพื่อนำเสนอประวัติ ผลงาน และทักษะในวิชาคอมพิวเตอร์
-                </p>
-                <div class="hero-buttons">
-                    <a href="profile.html" class="btn btn-primary"><i class="fa-solid fa-user-check"></i> รู้จักฉันมากขึ้น</a>
-                    <a href="hobby.html" class="btn btn-secondary"><i class="fa-solid fa-compass"></i> ดูงานอดิเรกของฉัน</a>
-                </div>
-            </div>
-            <div class="hero-image-wrapper">
-                <div class="profile-frame">
-                    <div class="glow-circle"></div>
-                    <img src="https://placehold.co/400x400/1976D2/FFFFFF?text=PROFILE+IMAGE" alt="รูปโปรไฟล์ของฉัน" class="profile-img">
-                </div>
-            </div>
-        </section>
+            <a href="index.html" class="brand">
+                <span class="brand-mark">A</span>
+                <span>
+                    <strong>ARTY</strong>
+                    <small>STUDENT PORTFOLIO</small>
+                </span>
+            </a>
 
-        <!-- Highlights / Quick Stats Section -->
-        <section class="quick-stats">
-            <div class="stat-card">
-                <i class="fa-solid fa-school icon"></i>
-                <h3>ระดับชั้น</h3>
-                <p>มัธยมศึกษาปีที่ 3</p>
-            </div>
-            <div class="stat-card">
-                <i class="fa-solid fa-laptop-code icon"></i>
-                <h3>วิชาที่เชี่ยวชาญ</h3>
-                <p>คอมพิวเตอร์ & เทคโนโลยี</p>
-            </div>
-            <div class="stat-card">
-                <i class="fa-solid fa-fire icon"></i>
-                <h3>เป้าหมาย</h3>
-                <p>พัฒนาตนเองสู่ความเป็นมืออาชีพ</p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3><i class="fa-solid fa-shield-halved"></i> STUDENT PORTFOLIO</h3>
-                <p>โครงงานวิชาคอมพิวเตอร์ ชั้นมัธยมศึกษาปีที่ 3</p>
-            </div>
-            <div class="footer-nav">
-                <a href="index.html">หน้าแรก</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">หน้าแรก</a>
                 <a href="profile.html">ประวัติส่วนตัว</a>
                 <a href="education.html">การศึกษา</a>
                 <a href="hobby.html">งานอดิเรก</a>
                 <a href="contact.html">ติดต่อ</a>
             </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section class="hero container">
+
+            <div class="hero-content">
+
+                <div class="status-line">
+                    <span class="status-dot"></span>
+                    STUDENT PROFILE // ONLINE
+                </div>
+
+                <p class="hero-kicker">WELCOME TO MY DIGITAL FIELD</p>
+
+                <h1>
+                    ธนกฤต
+                    <span>ธนันชัย</span>
+                </h1>
+
+                <p class="hero-description">
+                    สวัสดีครับ ผมชื่ออาร์ตี้ นักเรียนชั้นมัธยมศึกษาปีที่ 3
+                    ผู้ที่สนใจด้านคอมพิวเตอร์ ฟุตบอล และการสร้างสรรค์สิ่งใหม่ ๆ
+                </p>
+
+                <div class="hero-actions">
+                    <a href="profile.html" class="btn btn-primary">
+                        รู้จักฉันมากขึ้น
+                        <span>→</span>
+                    </a>
+
+                    <a href="hobby.html" class="btn btn-outline">
+                        ดูงานอดิเรกของฉัน
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>14</strong>
+                        <span>อายุ</span>
+                    </div>
+
+                    <div>
+                        <strong>M.3</strong>
+                        <span>ระดับชั้น</span>
+                    </div>
+
+                    <div>
+                        <strong>GSMP</strong>
+                        <span>ห้องเรียน</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Profile Visual -->
+            <div class="hero-visual">
+
+                <div class="target-ring ring-one"></div>
+                <div class="target-ring ring-two"></div>
+
+                <div class="profile-frame">
+
+                    <div class="frame-label">
+                        <span>IDENTITY</span>
+                        <span>001</span>
+                    </div>
+
+                    <img
+                        src="https://placehold.co/700x850/0a1726/bdeaff?text=ARTY"
+                        alt="รูปโปรไฟล์ของฉัน"
+                    >
+
+                    <div class="profile-overlay">
+                        <span>ARTY</span>
+                        <small>STUDENT / CREATOR</small>
+                    </div>
+
+                </div>
+
+                <div class="floating-data data-one">
+                    <span>STATUS</span>
+                    <strong>ACTIVE</strong>
+                </div>
+
+                <div class="floating-data data-two">
+                    <span>FIELD</span>
+                    <strong>COMPUTER</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Intro -->
+        <section class="section container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-number">01 / PROFILE</span>
+                    <h2>เข้าสู่โลกของฉัน</h2>
+                </div>
+
+                <p>
+                    เว็บไซต์นี้รวบรวมข้อมูลเกี่ยวกับตัวผม
+                    การศึกษา งานอดิเรก และสิ่งที่ผมสนใจ
+                </p>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card large">
+                    <span class="feature-number">01</span>
+                    <span class="feature-icon">◈</span>
+                    <h3>My Identity</h3>
+                    <p>
+                        เรียนรู้เกี่ยวกับตัวตน ความสนใจ
+                        และเป้าหมายของผมในอนาคต
+                    </p>
+                    <a href="profile.html">EXPLORE PROFILE →</a>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">02</span>
+                    <span class="feature-icon">⌁</span>
+                    <h3>Education</h3>
+                    <p>
+                        เส้นทางการศึกษาและสิ่งที่ผมกำลังเรียนรู้
+                    </p>
+                    <a href="education.html">VIEW TIMELINE →</a>
+                </article>
+
+                <article class="feature-card accent-card">
+                    <span class="feature-number">03</span>
+                    <span class="feature-icon">✦</span>
+                    <h3>My Hobbies</h3>
+                    <p>
+                        สิ่งที่ผมชอบทำในเวลาว่าง
+                        ตั้งแต่กีฬา เกม เพลง และภาพยนตร์
+                    </p>
+                    <a href="hobby.html">DISCOVER →</a>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section container">
+
+            <div class="cta-box">
+
+                <div>
+                    <span class="section-number">MISSION / NEXT STEP</span>
+                    <h2>พร้อมทำความรู้จักผมหรือยัง?</h2>
+                    <p>
+                        สำรวจ Portfolio ของผมผ่านเมนูด้านบน
+                    </p>
+                </div>
+
+                <a href="contact.html" class="btn btn-primary">
+                    CONTACT ME →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <div>
+                <strong>ARTY</strong>
+                <p>Modern Student Portfolio</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติ</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
+            </div>
+
+            <div>
+                <p>ธนกฤต ธนันชัย</p>
+                <small>ม.3/2</small>
+            </div>
+
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Student Portfolio Project. All Rights Reserved.</p>
+
+        <div class="copyright">
+            © 2026 ARTY Student Portfolio
         </div>
+
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Mouse Impact Effect -->
+    <script>
+        document.addEventListener("pointerdown", function(event) {
+
+            if (event.button !== 0) return;
+
+            if (
+                event.target.closest("a") ||
+                event.target.closest("button")
+            ) {
+                return;
+            }
+
+            const burst = document.createElement("div");
+            burst.className = "click-burst";
+
+            burst.style.left = event.clientX + "px";
+            burst.style.top = event.clientY + "px";
+
+            burst.innerHTML = `
+                <span class="burst-flash"></span>
+                <span class="burst-ring"></span>
+                <span class="burst-ring ring-delay"></span>
+                <span class="burst-spark s1"></span>
+                <span class="burst-spark s2"></span>
+                <span class="burst-spark s3"></span>
+                <span class="burst-spark s4"></span>
+                <span class="burst-spark s5"></span>
+                <span class="burst-spark s6"></span>
+                <span class="burst-smoke"></span>
+            `;
+
+            document.body.appendChild(burst);
+
+            setTimeout(() => {
+                burst.remove();
+            }, 900);
+        });
+    </script>
+
 </body>
 </html>
